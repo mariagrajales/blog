@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contain_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #af7ead;
+}
+
+
+
+.lista_nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: purple;
+
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+
+}
+
+.logo{
+    position: relative;
+    right: 50px;
+}
+.contenedor {
+    width: 100vw;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #ad29a8, #f352ff, rgb(240, 139, 255));
+    position: relative;
+}
+
+.contenedor::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 10' width='1000' height='100'%3E%3Cpath fill='%23fff' d='M0 10 Q125 -10,250 10 Q375 30,500 10 Q625 -10,750 10 Q875 30,1000 10 L1000 100 L0 100 Z'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+
+.mensaje_proyectos{
+    margin-top: 100px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.portafolio{
+    display: flex;
+    margin: 70px;
+}
+
+.portafolio_mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.titulo_mensaje_portafolio{
+    padding: 25px;
+}
+.texto_mensaje_portafolio{
+    padding: 25px;
+}
+.bakground{
+    width: 45vw;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 800px;
+}
+
+.cardd{
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 16px;
+    height: 360px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardd img{
+    height: 360px;
+}
+
+.cardd:hover{
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 30vw;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    background-color: #fa909d;
+
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /*background-image: linear-gradient(to bottom, #af7ead, #fa909d, #fcce6c);*/
+    background-color: #575556;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.contain_card_habilidades{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 50px;
+}
+
+.portafolio_inicio{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
